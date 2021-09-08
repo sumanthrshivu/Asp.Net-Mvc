@@ -1,3 +1,32 @@
+## Routing in ASP.NET
+ - Routing is a process through which the application matches any incoming URL path and execute the corresponding action methods ASP.net MVC. 
+ - Routing is a pattern matching system that is responsible for mapping incoming browser requests to specified MVC controller actions.
+ - routing engine uses the route table for matching the incoming request.
+ - Route config file is used for adding route rules.
+ - We invoke a RegisterRoutes methods in the App_Start() method.
+ - Routing can also be used to setup the startup page of the application.
+## Default  routing  
+      When we create a new ASP.NET MVC application,by default the application is already configured to use ASP.NET Routing.
+```C#
+public class MvcApplication : System.Web.HttpApplication
+    {
+        public static void RegisterRoutes(RouteCollection routes)
+        {
+            routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
+
+            routes.MapRoute(
+                "Default",                                              // Route name
+                "{controller}/{action}/{id}",                           // URL with parameters
+                new { controller = "Home", action = "Index", id = "" }  // Parameter defaults
+            );
+        }
+
+        protected void Application_Start()
+        {
+            RegisterRoutes(RouteTable.Routes);
+        }
+    }
+```
 # Asp.Net MVC - ViewBag
 The ViewBag in ASP.NET MVC is used to transfer temporary data (which is not included in the model) from the controller to the view.<br />
 
