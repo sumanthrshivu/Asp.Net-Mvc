@@ -65,22 +65,25 @@ namespace ViewData.Controllers
  ```
 ---
 # ActionResult
+* The ActionResult class is a base class of all the below result classes, so it can be the return type of action method that returns any result listed below. However, we can specify the appropriate result class as a return type of action method.
 * MVC framework includes various Result classes, which can be returned from an action method.
 * The result classes represent different types of responses, such as HTML, file, string, JSON, javascript, etc. 
 * The following table lists all the result classes available in ASP.NET MVC.
 
-| Result Class                                        | Description                                         |
-|-----------------------------------------------------|-------------------------------------------------------|
-| ViewResult                                          | Represents HTML and markup.                           |
-| EmptyResult                                         | Represents No response.                               |
-| ContentResult                                       | Represents string literal.                            |
-| FileContentResult/ FilePathResult/ FileStreamResult | Represents the content of a file.                     |
-| JavaScriptResult                                    | Represent a JavaScript script.                        |
-| JsonResult                                          | Represent JSON that can be used in AJAX.              |
-| RedirectResult                                      | Represents a redirection to a new URL.                |
-| RedirectToRouteResult                               | Represent another action of same or other controller. |
-| PartialViewResult                                   | Returns HTML from Partial view.                       |
-| HttpUnauthorizedResult                              | Returns HTTP 403 status.                              |
+| Result Class                                        | Description                                           | Base Controller Method |
+|-----------------------------------------------------|-------------------------------------------------------|------------------------|
+| ViewResult                                          | Represents HTML and markup.                           | View()                 |
+| EmptyResult                                         | Represents No response.                               |                        |
+| ContentResult                                       | Represents string literal.                            | Content()              |
+| FileContentResult/ FilePathResult/ FileStreamResult | Represents the content of a file.                     | File()                 |
+| JavaScriptResult                                    | Represent a JavaScript script.                        | JavaScript()           |
+| JsonResult                                          | Represent JSON that can be used in AJAX.              | Json()                 |
+| RedirectResult                                      | Represents a redirection to a new URL.                | Redirect()             |
+| RedirectToRouteResult                               | Represent another action of same or other controller. | RedirectToRoute()      |
+| PartialViewResult                                   | Returns HTML from Partial view.                       | PartialView()          |
+| HttpUnauthorizedResult                              | Returns HTTP 403 status.                              |                        |
+
+
 
 
 
