@@ -36,4 +36,15 @@ In the above figure, it attaches Name property to ViewBag with the dot notation 
 
 # Asp.Net CRUD Operations
 * how to insert update delete and display the data using sql in MVC.
+# Filters: pre-post
+An filter is an attribute that you can apply to a controller action -- or an entire controller -- that modifies the way in which the action is executed. 
 
+## Builtin filters
+* OutputCache – This action filter caches the output of a controller action for a specified amount of time.
+* HandleError – This action filter handles errors raised when a controller action executes.
+* Authorize – This action filter enables you to restrict access to a particular user or role.
+    16-Oct-2008.
+## Custmon filters
+* Action Filter: It is performing before or after action method.
+* Result Filter: It is performing before or after the action result.
+* Exception Filter: It is executed if there is some exception thrown by application when performing action process. It is used to show the error page or for logging error details.
