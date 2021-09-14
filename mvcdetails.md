@@ -9,3 +9,7 @@
 
 # Action Result Concepts
 * Result Classes and its base controller methods
+
+# Asp.Net CRUD Operations
+* how to insert update delete and display the data using sql in MVC.
+
