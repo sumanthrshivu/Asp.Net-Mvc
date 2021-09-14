@@ -36,7 +36,7 @@ In the above figure, it attaches Name property to ViewBag with the dot notation 
 
 # Asp.Net CRUD Operations
 * how to insert update delete and display the data using sql in MVC.
-# Filters: pre-post
+# Filters
 An filter is an attribute that you can apply to a controller action -- or an entire controller -- that modifies the way in which the action is executed. 
 
 ## Builtin filters
