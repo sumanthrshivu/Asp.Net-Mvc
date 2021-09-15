@@ -1,4 +1,4 @@
-# HTMl Helpers
+# HTMl Helpers in Asp.Net
 The HtmlHelper class renders HTML controls in the razor view. It binds the model object to HTML controls to display the value of model properties into those controls and also assigns the value of the controls to the model properties while submitting a web form.So always use the HtmlHelper class in razor view instead of writing HTML tags manually.
 ![htmlhelpers](https://user-images.githubusercontent.com/74582120/133394685-2738fff0-346b-499a-b39c-25f9924eb7e9.png),<br>
 The following table lists the HtmlHelper methods and HTML control each method renders.<br>
