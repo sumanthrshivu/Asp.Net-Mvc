@@ -1,3 +1,24 @@
+# HTMl Helpers
+The HtmlHelper class renders HTML controls in the razor view. It binds the model object to HTML controls to display the value of model properties into those controls and also assigns the value of the controls to the model properties while submitting a web form.So always use the HtmlHelper class in razor view instead of writing HTML tags manually.
+![htmlhelpers](https://user-images.githubusercontent.com/74582120/133394685-2738fff0-346b-499a-b39c-25f9924eb7e9.png),<br>
+The following table lists the HtmlHelper methods and HTML control each method renders.<br>
+
+| Extension Method    | Strongly Typed Method  | Html Control                    |
+|---------------------|------------------------|---------------------------------|
+| Html.ActionLink()   | NA                     |               < a>< /a>           |
+| Html.TextBox()      | Html.TextBoxFor()      | < input type="textbox">          |
+| Html.TextArea()	    | Html.TextAreaFor()     | < input type="textarea">         |
+| Html.CheckBox()     | Html.TextAreaFor()     | < input type="checkbox">         |
+| Html.RadioButton()  | Html.RadioButtonFor()  | < input type="radio">            |
+| Html.DropDownList() | Html.DropDownListFor() | < select> < option> </ select>     |
+| Html.ListBox()      | Html.ListBoxFor()      | multi-select list box: < select> |
+| Html.Hidden()       | Html.HiddenFor()       | < input type="hidden">           |
+| Html.Password()     | Html.PasswordFor()     | < input type="password">         |
+| Html.Display()      | Html.DisplayFor()      | HTML text: ""                   |
+| Html.Label()        | Html.LabelFor()        | < label>           < label>       |
+| Html.Editor()       | Html.EditorFor()       | generate data based on datatype  |
+
+
 # Asp.Net WebApi
 * Api stands for Application Programing Interface
 * ASP.NET Web API is an extensible framework for building HTTP based services that can be accessed in different applications on different platforms such as web, windows, mobile etc.
